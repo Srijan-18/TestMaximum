@@ -15,46 +15,46 @@ public class FindMaximumTest {
 
     @Test
     public void givenIntegerArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
-        Assert.assertEquals((Integer) 50, findMaximum.selectMax(new Integer[]{50, 30, 40}));
+        findMaximum=new FindMaximum("SAM", "AMS", "MSA");
+        Assert.assertEquals( "SAM", findMaximum.selectMax());
     }
-
     @Test
     public void givenIntegerArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
-        Assert.assertEquals((Integer) 50, findMaximum.selectMax(new Integer[]{40, 50, 30}));
+        Assert.assertEquals( 50, new FindMaximum(40, 50, 30).selectMax());
     }
 
     @Test
     public void givenIntegerArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
-        Assert.assertEquals((Integer) 50, findMaximum.selectMax(new Integer[]{40, 30, 50}));
+        Assert.assertEquals( 50, new FindMaximum(40, 30, 50).selectMax());
     }
 
     @Test
     public void givenFloatArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
-        Assert.assertEquals((Float) 20.7f, findMaximum.selectMax(new Float[]{20.7f, 2.07f, .207f}));
+        Assert.assertEquals(20.7f, new FindMaximum(20.7f, 2.07f, .207f).selectMax());
     }
 
     @Test
     public void givenFloatArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
-        Assert.assertEquals((Float) 20.7f, findMaximum.selectMax(new Float[]{2.07f, 20.7f, .207f}));
+        Assert.assertEquals(20.7f, new FindMaximum(2.07f, 20.7f, .207f).selectMax());
     }
 
     @Test
     public void givenFloatArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
-        Assert.assertEquals((Float) 20.7f, findMaximum.selectMax(new Float[]{2.07f, .207f, 20.7f}));
+        Assert.assertEquals(20.7f, new FindMaximum(2.07f, .207f, 20.7f).selectMax());
     }
 
     @Test
     public void givenStringArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
-        Assert.assertEquals("Peach", findMaximum.selectMax(new String[]{"Peach", "Apple", "Banana"}));
+        Assert.assertEquals("Peach", new FindMaximum("Peach", "Apple", "Banana").selectMax());
     }
 
     @Test
     public void givenStringArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
-        Assert.assertEquals("Peach", findMaximum.selectMax(new String[]{"Apple", "Peach", "Banana"}));
+        Assert.assertEquals("Peach", new FindMaximum( "Apple","Peach", "Banana").selectMax());
     }
 
     @Test
     public void givenStringArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
-        Assert.assertEquals("Peach", findMaximum.selectMax(new String[]{"Apple", "Banana", "Peach"}));
+        Assert.assertEquals("Peach", new FindMaximum("Apple", "Banana", "Peach").selectMax());
     }
 }
