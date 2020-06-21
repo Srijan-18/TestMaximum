@@ -10,7 +10,6 @@ public class FindMaximum<T extends Comparable> {
 
     /**
      * Parameterised Constructor to initialise the array
-     *
      * @param elements
      */
 
@@ -20,7 +19,6 @@ public class FindMaximum<T extends Comparable> {
 
     /**
      * Method to evaluate Sort the input and return maximum
-     *
      * @param <T>
      * @return Maximum Element of all the elements entered
      */
@@ -32,7 +30,6 @@ public class FindMaximum<T extends Comparable> {
 
     /**
      * Generic Method to print maximum Value of the class variable array.
-     *
      * @param maxElement
      * @param <T>
      */

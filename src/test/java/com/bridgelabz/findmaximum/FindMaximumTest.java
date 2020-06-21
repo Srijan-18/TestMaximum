@@ -57,7 +57,26 @@ public class FindMaximumTest {
     }
 
     @Test
-    public void giveArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
+    public void givenArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
         Assert.assertEquals("Zen", new FindMaximum("Zen", "Apple").selectMax());
     }
+    @Test
+    public void givenIntegerArray_WhenLengthIsMoreThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals(50, new FindMaximum(10,20,30,50,40).selectMax());
+    }
+
+    @Test
+    public void givenIntegerArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals(50, new FindMaximum(40, 50).selectMax());
+    }
+    @Test
+    public void givenFloatArray_WhenLengthIsMoreThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals( 20.7f, new FindMaximum(.00207f,20.7f,2.07f,.0207f).selectMax());
+    }
+
+    @Test
+    public void givenFloatArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals(20.7f, new FindMaximum(20.7f,2.07f).selectMax());
+    }
+
 }
