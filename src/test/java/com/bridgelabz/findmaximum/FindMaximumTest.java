@@ -24,7 +24,13 @@ public class FindMaximumTest {
     }
 
     @Test
-    public void givenIntegerArray_WhenMaximumAtThirddPosition_ShouldReturnThirdValue() {
+    public void givenIntegerArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
         Assert.assertEquals((Integer)50,findMaximum.selectMax(new Integer[]{40,30,50}));
     }
+
+    @Test
+    public void givenFloatArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
+        Assert.assertEquals((Float)20.7f,findMaximum.selectMaxFloat(new Float[]{20.7f,2.07f,.207f}));
+    }
+
 }
