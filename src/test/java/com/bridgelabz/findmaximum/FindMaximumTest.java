@@ -2,30 +2,23 @@ package com.bridgelabz.findmaximum;
 
 import com.bridgelabz.findmaximum.services.FindMaximum;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class FindMaximumTest {
-    FindMaximum findMaximum;
-
-    @Before
-    public void initialize() {
-        findMaximum = new FindMaximum();
-    }
 
     @Test
     public void givenIntegerArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
-        findMaximum=new FindMaximum("SAM", "AMS", "MSA");
-        Assert.assertEquals( "SAM", findMaximum.selectMax());
+        Assert.assertEquals(50, new FindMaximum(50, 30, 40).selectMax());
     }
+
     @Test
     public void givenIntegerArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
-        Assert.assertEquals( 50, new FindMaximum(40, 50, 30).selectMax());
+        Assert.assertEquals(50, new FindMaximum(40, 50, 30).selectMax());
     }
 
     @Test
     public void givenIntegerArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
-        Assert.assertEquals( 50, new FindMaximum(40, 30, 50).selectMax());
+        Assert.assertEquals(50, new FindMaximum(40, 30, 50).selectMax());
     }
 
     @Test
@@ -50,20 +43,21 @@ public class FindMaximumTest {
 
     @Test
     public void givenStringArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
-        Assert.assertEquals("Peach", new FindMaximum( "Apple","Peach", "Banana").selectMax());
+        Assert.assertEquals("Peach", new FindMaximum("Apple", "Peach", "Banana").selectMax());
     }
 
     @Test
     public void givenStringArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
         Assert.assertEquals("Peach", new FindMaximum("Apple", "Banana", "Peach").selectMax());
     }
+
     @Test
     public void givenArray_WhenLengthIsMoreThanThreeElements_ShouldReturnMaximumValueElement() {
-        Assert.assertEquals("Pineapple", new FindMaximum("Apple", "Banana", "Peach","Pineapple").selectMax());
+        Assert.assertEquals("Zen", new FindMaximum("Apple", "Banana", "Zen", "Peach", "Pineapple").selectMax());
     }
 
     @Test
     public void giveArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
-        Assert.assertEquals("Zen", new FindMaximum("Zen","Apple").selectMax());
+        Assert.assertEquals("Zen", new FindMaximum("Zen", "Apple").selectMax());
     }
 }
