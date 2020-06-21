@@ -22,7 +22,7 @@ public class FindMaximum<T extends Comparable> {
      * @param <T>
      * @return Maximum Element of all the elements entered
      */
-    public <T extends Comparable> T selectMax() {
+    public <T extends Comparable> T testMaximum() {
         Arrays.sort(elements);
         printMax(elements[elements.length - 1]);
         return (T) elements[elements.length - 1];
