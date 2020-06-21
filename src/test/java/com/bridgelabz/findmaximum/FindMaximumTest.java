@@ -33,4 +33,8 @@ public class FindMaximumTest {
         Assert.assertEquals((Float)20.7f,findMaximum.selectMaxFloat(new Float[]{20.7f,2.07f,.207f}));
     }
 
+    @Test
+    public void givenFloatArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
+        Assert.assertEquals((Float)20.7f,findMaximum.selectMaxFloat(new Float[]{2.07f,20.7f,.207f}));
+    }
 }

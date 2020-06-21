@@ -16,6 +16,12 @@ public class FindMaximum {
         }
         return max;
     }
+
+    /**
+     *Method to find maximum Float using compareTo method
+     * @param floatArray
+     * @return max
+     */
     public Float selectMaxFloat(Float[] floatArray){
         Float max;
         max=floatArray[0];
