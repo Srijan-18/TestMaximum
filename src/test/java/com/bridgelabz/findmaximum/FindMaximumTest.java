@@ -47,4 +47,9 @@ public class FindMaximumTest {
     public void givenStringArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
         Assert.assertEquals("Peach",findMaximum.selectMaxString(new String[]{"Peach","Apple","Banana"}));
     }
+
+    @Test
+    public void givenStringArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
+        Assert.assertEquals("Peach",findMaximum.selectMaxString(new String[]{"Apple","Peach","Banana"}));
+    }
 }
