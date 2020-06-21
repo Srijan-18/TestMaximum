@@ -57,4 +57,13 @@ public class FindMaximumTest {
     public void givenStringArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
         Assert.assertEquals("Peach", new FindMaximum("Apple", "Banana", "Peach").selectMax());
     }
+    @Test
+    public void givenArray_WhenLengthIsMoreThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals("Pineapple", new FindMaximum("Apple", "Banana", "Peach","Pineapple").selectMax());
+    }
+
+    @Test
+    public void giveArray_WhenLengthIsLessThanThreeElements_ShouldReturnMaximumValueElement() {
+        Assert.assertEquals("Zen", new FindMaximum("Zen","Apple").selectMax());
+    }
 }
