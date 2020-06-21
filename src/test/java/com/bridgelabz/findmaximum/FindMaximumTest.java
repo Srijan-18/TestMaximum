@@ -42,4 +42,9 @@ public class FindMaximumTest {
     public void givenFloatArray_WhenMaximumAtThirdPosition_ShouldReturnThirdValue() {
         Assert.assertEquals((Float)20.7f,findMaximum.selectMaxFloat(new Float[]{2.07f,.207f,20.7f}));
     }
+
+    @Test
+    public void givenStringArray_WhenMaximumAtFirstPosition_ShouldReturnFirstValue() {
+        Assert.assertEquals("Peach",findMaximum.selectMaxString(new String[]{"Peach","Apple","Banana"}));
+    }
 }

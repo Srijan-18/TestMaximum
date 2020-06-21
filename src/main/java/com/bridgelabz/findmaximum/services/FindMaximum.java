@@ -31,4 +31,18 @@ public class FindMaximum {
         }
         return max;
     }
+    /**
+     *Method to find maximum String using compareTo method
+     * @param stringArray
+     * @return max
+     */
+    public String selectMaxString(String[] stringArray) {
+        String max;
+        max = stringArray[0];
+        for (String s : stringArray) {
+            if (max.compareTo(s) < 0)
+                max = s;
+        }
+        return max;
+    }
 }
