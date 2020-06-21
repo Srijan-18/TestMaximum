@@ -22,4 +22,9 @@ public class FindMaximumTest {
     public void givenIntegerArray_WhenMaximumAtSecondPosition_ShouldReturnSecondValue() {
         Assert.assertEquals((Integer)50,findMaximum.selectMax(new Integer[]{40, 50, 30}));
     }
+
+    @Test
+    public void givenIntegerArray_WhenMaximumAtThirddPosition_ShouldReturnThirdValue() {
+        Assert.assertEquals((Integer)50,findMaximum.selectMax(new Integer[]{40,30,50}));
+    }
 }
