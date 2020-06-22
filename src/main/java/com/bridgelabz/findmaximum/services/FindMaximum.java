@@ -5,14 +5,10 @@ import java.util.Arrays;
 public class FindMaximum<TypeT extends Comparable> {
     private TypeT elements[];
 
-    public FindMaximum() {
-    }
-
     /**
      * Parameterised Constructor to initialise the array
      * @param elements
      */
-
     public FindMaximum(TypeT... elements) {
         this.elements = elements;
     }
